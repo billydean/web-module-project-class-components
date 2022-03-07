@@ -1,5 +1,6 @@
 import React from 'react'
 import { v4 as uuid } from 'uuid'
+import Form from './Form'
 
 const todos = [
   {
@@ -19,11 +20,11 @@ const initialState = {
 }
 export default class App extends React.Component {
   state = initialState;
-  
+
   render() {
     return (
       <div>
-        Todo App
+        <Form />
       </div>
     )
   }
